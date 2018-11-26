@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiant"
+    tools:context="com.open.shofiul.calculator.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingRight="30dp">
+
+
+        <customfonts.MyTextView_Roboto_Regular
+            android:id="@+id/tv_sub_resut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="175dp"
+            android:gravity="right"
+            android:text="1200*20*60"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <customfonts.MyTextView_Roboto_Bold
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="right"
+            android:text="5,760,000"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#faa2a4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="7dp">
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_ac"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:text="AC"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/bt_div"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+
+                android:src="@drawable/ic_division"
+                android:textColor="@color/white" />
+
+
+            <ImageView
+                android:id="@+id/bt_mul"
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_multiplication_sign"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/bt_minus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_minus"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="9"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/bt_plus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_add"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/bt_percent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_discount_symbol"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/bt_back_space"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_delete"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_00"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="00"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <customfonts.MyTextView_Roboto_Bold
+                android:id="@+id/bt_dot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="."
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/bt_equal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="15dp"
+                android:src="@drawable/ic_equal"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
